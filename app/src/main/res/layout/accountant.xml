@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:background="#344B63">
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/noimg"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/tvAccountantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accountant Name"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/imgProfile"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Price"
+        android:textSize="17dp"
+        android:layout_below="@id/tvAccountantName" />
+
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvPrice"
+        android:text="View"
+        android:layout_marginLeft="25dp"
+        android:backgroundTint="@color/teal_700"/>
+
+
+</RelativeLayout>

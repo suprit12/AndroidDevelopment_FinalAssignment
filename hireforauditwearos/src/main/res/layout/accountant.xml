@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/itemimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Item Name"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintLeft_toRightOf="@+id/itemimage"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/itemrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Rate"
+        android:layout_marginLeft="5dp"
+
+        app:layout_constraintLeft_toRightOf="@+id/itemimage"
+        app:layout_constraintTop_toBottomOf="@+id/itemname"
+        tools:ignore="MissingConstraints"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

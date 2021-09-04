@@ -1,0 +1,3 @@
+include ':hireforauditwearos'
+include ':app'
+rootProject.name = "HireAudit"

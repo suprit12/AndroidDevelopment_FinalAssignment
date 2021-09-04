@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewAccountantActivity"
+    android:id="@+id/viewAccountantsLayout"
+    >
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+
+        android:src="@drawable/btnback"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Accountant details"
+            android:textSize="40dp"/>
+
+    <ImageView
+        android:id="@+id/accountantImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/noimg"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/accountantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Accountant name"
+        android:textSize="25sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/accountantEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Accountant email"
+        android:textSize="25sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/accountantGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Accountant gender"
+        android:textSize="25sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/accountantExp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Accountant experience"
+        android:textSize="25sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/accountantMob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter the date till you will be booking"
+        android:textSize="20dp"
+        android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/etEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="none"
+            android:textIsSelectable="true"
+            android:hint="yy/mm/dd"/>
+
+
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:backgroundTint="#476856"
+        android:text="Book"
+        android:textStyle="bold"/>
+
+
+
+</LinearLayout></ScrollView>

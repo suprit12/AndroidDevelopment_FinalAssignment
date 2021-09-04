@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:id="@+id/hireLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/back">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgAccountantImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/noimg"
+        />
+
+    <TextView
+        android:id="@+id/tvAccountantFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accountant name"
+        android:layout_toRightOf="@+id/imgAccountantImg"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tvStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start date"
+        android:layout_below="@+id/tvAccountantFullName"
+        android:layout_toRightOf="@+id/imgAccountantImg"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/tvEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="End date"
+        android:layout_below="@+id/tvStartDate"
+        android:layout_toRightOf="@+id/imgAccountantImg"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/tvPricePerDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="price per day"
+        android:layout_below="@+id/tvEndDate"
+        android:layout_toRightOf="@+id/imgAccountantImg"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"/>
+
+    <ImageView
+        android:id="@+id/imgBtnUpdate"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        app:tint="#445B45" />
+
+    <ImageView
+        android:id="@+id/imgBtnDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_baseline_delete_24"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imgBtnUpdate"
+        android:layout_marginRight="20dp"
+        app:tint="#AB0812"/>
+
+
+
+
+
+
+
+</RelativeLayout>

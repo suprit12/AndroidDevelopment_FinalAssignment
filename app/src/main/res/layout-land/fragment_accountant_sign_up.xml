@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.AccountantSignUpFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account Sign Up"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:id="@+id/imgAccountant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/person"
+            app:tint = "#848079"/>
+
+        <LinearLayout
+            android:id="@+id/accountantFormLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/etFName"
+                style="@style/generalStyle"
+                android:hint="Enter first name"
+                />
+            <EditText
+                android:id="@+id/etLName"
+                style="@style/generalStyle"
+                android:hint="Enter last name"
+                />
+            <EditText
+                android:id="@+id/etEmail"
+                style="@style/generalStyle"
+                android:hint="Enter email address"
+                />
+            <EditText
+                android:id="@+id/etUsername"
+                style="@style/generalStyle"
+                android:hint="Enter username"
+                />
+            <TextView
+                style="@style/generalStyle"
+                android:text="Select gender"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <RadioGroup
+                android:id="@+id/radGender"
+                style="@style/generalStyle"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radMale"
+                    style="@style/signUpFormRadio"
+                    android:text="Male"/>
+                <RadioButton
+                    android:id="@+id/radFemale"
+                    style="@style/signUpFormRadio"
+                    android:text="Female"
+                    />
+                <RadioButton
+                    android:id="@+id/radOthers"
+                    style="@style/signUpFormRadio"
+                    android:text="Others"
+                    />
+
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/etExperience"
+                style="@style/generalStyle"
+                android:hint="Enter experience in years"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/etMobNo"
+                style="@style/generalStyle"
+                android:hint="Enter mobile number"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/etPrice"
+                style="@style/generalStyle"
+                android:hint="Quote your price"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/etPassword"
+                style="@style/generalStyle"
+                android:hint="Enter password"
+                android:inputType="textPassword"/>
+            <EditText
+                android:id="@+id/etPassword2"
+                style="@style/generalStyle"
+                android:hint="Confirm password"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/btnSignUp"
+                style="@style/roundedButton"
+                android:layout_marginTop="20dp"
+                android:text="Sign up"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Already have an account? "
+                android:gravity="end"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/login_here"
+                android:textSize="15sp"
+
+                android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
